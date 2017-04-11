@@ -20,7 +20,7 @@ public class revolutionList<E> {
     public niceNode<E> estrai(){
         int nicePriority = this.root.getNice() - 1;
         niceNode<E> nextNode = this.root;
-        revolutionList<E> nextList = this.next;
+        revolutionList<E> nextList;
         do{
             if(nextNode.getNice() < nicePriority) nicePriority = nextNode.getNice();
             nextNode = this.next.root;
