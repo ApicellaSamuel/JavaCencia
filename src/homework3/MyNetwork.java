@@ -5,7 +5,6 @@ import java.util.*;
 
 /**
  * Created by sam on 15/04/17.
- * Rete di oggetti?
  */
 public class MyNetwork<T> implements Network<T> {
 

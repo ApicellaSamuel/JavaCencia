@@ -50,11 +50,11 @@ public class mainNet {
             network.addEdge(node7, node8);
             network.addEdge(node8, node5);
             network.addEdge(node2, node11);
-            network.addEdge(node11, node8);
+            network.addEdge(node11, node6);
             Node<Integer> node = new Node<>(17);
             network.addNode(node);
             network.setSource(node1);
-            network.setTarget(node);
+            network.setTarget(node6);
         }catch (NoSuchNodeException e){ System.out.println("mmm"); }
 
         try{
