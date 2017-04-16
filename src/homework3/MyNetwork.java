@@ -64,6 +64,7 @@ public class MyNetwork<T> implements Network<T> {
 
         Stack<T> momentStack = new Stack<>();
         T son = this.target;
+        if(!fathersVector.containsKey(this.target)) throw new NoSuchPathException();
         while(!son.equals(this.source)){
             momentStack.push(son);
             son=fathersVector.get(son);
